@@ -1,0 +1,48 @@
+GakkoRS:PRIMARY> rs.status()
+{
+        "set" : "GakkoRS",
+        "date" : ISODate("2015-01-16T16:19:47Z"),
+        "myState" : 1,
+        "members" : [
+                {
+                        "_id" : 0,
+                        "name" : "localhost:27017",
+                        "health" : 1,
+                        "state" : 1,
+                        "stateStr" : "PRIMARY",
+                        "uptime" : 442,
+                        "optime" : Timestamp(1421425022, 1),
+                        "optimeDate" : ISODate("2015-01-16T16:17:02Z"),
+                        "electionTime" : Timestamp(1421424799, 1),
+                        "electionDate" : ISODate("2015-01-16T16:13:19Z"),
+                        "self" : true
+                },
+                {
+                        "_id" : 1,
+                        "name" : "localhost:27018",
+                        "health" : 1,
+                        "state" : 2,
+                        "stateStr" : "SECONDARY",
+                        "uptime" : 398,
+                        "optime" : Timestamp(1421425022, 1),
+                        "optimeDate" : ISODate("2015-01-16T16:17:02Z"),
+                        "lastHeartbeat" : ISODate("2015-01-16T16:19:45Z"),
+                        "lastHeartbeatRecv" : ISODate("2015-01-16T16:19:45Z"),
+                        "pingMs" : 0,
+                        "syncingTo" : "localhost:27017"
+                },
+                {
+                        "_id" : 2,
+                        "name" : "localhost:30000",
+                        "health" : 1,
+                        "state" : 7,
+                        "stateStr" : "ARBITER",
+                        "uptime" : 396,
+                        "lastHeartbeat" : ISODate("2015-01-16T16:19:45Z"),
+                        "lastHeartbeatRecv" : ISODate("2015-01-16T16:19:45Z"),
+                        "pingMs" : 0
+                }
+        ],
+        "ok" : 1
+}
+GakkoRS:PRIMARY>

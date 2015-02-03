@@ -1,0 +1,32 @@
+GakkoRS:PRIMARY> show dbs
+GakkoAppDB  0.078GB
+admin       0.078GB
+local       0.078GB
+GakkoRS:PRIMARY> db.getUsers()
+[
+        {
+                "_id" : "GakkoAppDB.siteUserAdmin",
+                "user" : "siteUserAdmin",
+                "db" : "GakkoAppDB",
+                "roles" : [
+                        {
+                                "role" : "userAdminAnyDatabase",
+                                "db" : "admin"
+                        }
+                ]
+        },
+        {
+                "_id" : "GakkoAppDB.Nathan_04",
+                "user" : "Nathan_04",
+                "db" : "GakkoAppDB",
+                "roles" : [
+                        {
+                                "role" : "root",
+                                "db" : "admin"
+                        }
+                ]
+        }
+]
+GakkoRS:PRIMARY>
+====================================
+

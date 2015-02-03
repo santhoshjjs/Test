@@ -1,0 +1,87 @@
+var config = {
+        "_id" : "GakkoRS",
+        "version" : 1,
+        "members" : [
+                {
+                        "_id" : 0,
+                        "host" : "localhost:27017",
+                        "arbiterOnly" : false,
+                        "priority" : 10,
+                        "buildIndexes" : true,
+                        "hidden" : false,
+                        "slaveDelay" : 0,
+                        "votes" : 1
+                },
+                {
+                        "_id" : 1,
+                        "host" : "localhost:27018",
+                        "arbiterOnly" : false,
+                        "priority" : 5,
+                        "buildIndexes" : true,
+                        "hidden" : false,
+                        "slaveDelay" : 0,
+                        "votes" : 1
+                },
+                {
+                        "_id" : 2,
+                        "host" : "localhost:30000",
+                        "arbiterOnly" : true,
+                        "priority" : 1,
+                        "buildIndexes" : true,
+                        "hidden" : false,
+                        "slaveDelay" : 0,
+                        "votes" : 1
+                }
+        ]
+}
+>
+
+rs.initiate(config)
+
+************************************************************************************************
+Result
+>
+> var config = {
+...         "_id" : "GakkoReplicationSet",
+...         "version" : 1,
+...         "members" : [
+...                 {
+...                         "_id" : 0,
+...                         "host" : "localhost:27017",
+...                         "arbiterOnly" : false,
+...                         "priority" : 10,
+...                         "buildIndexes" : true,
+...                         "hidden" : false,
+...                         "slaveDelay" : 0,
+...                         "votes" : 1
+...                 },
+...                 {
+...                         "_id" : 1,
+...                         "host" : "localhost:27018",
+...                         "arbiterOnly" : false,
+...                         "priority" : 8,
+...                         "buildIndexes" : true,
+...                         "hidden" : false,
+...                         "slaveDelay" : 0,
+...                         "votes" : 1
+...                 },
+...                 {
+...                         "_id" : 2,
+...                         "host" : "localhost:30000",
+...                         "arbiterOnly" : true,
+...                         "priority" : 1,
+...                         "buildIndexes" : true,
+...                         "hidden" : false,
+...                         "slaveDelay" : 0,
+...                         "votes" : 1
+...                 }
+...         ]
+... }
+>
+> rs.initiate(config)
+{
+        "info" : "Config now saved locally.  Should come online in about a minute.",
+        "ok" : 1
+}
+>
+

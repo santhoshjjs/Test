@@ -1,0 +1,42 @@
+db.createUser( {
+    user: "Nathan_04",
+    pwd: "Nathan_!@#",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  });
+db.createUser( {
+    user: "siteRootAdmin",
+    pwd: "admn",
+    roles: [ { role: "root", db: "admin" } ]
+  });
+  
+  =========================================================================
+  > db.createUser( {
+...     user: "Nathan_04",
+...     pwd: "Nathan_!@#",
+...     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+...   });
+Successfully added user: {
+        "user" : "Nathan_04",
+        "roles" : [
+                {
+                        "role" : "userAdminAnyDatabase",
+                        "db" : "admin"
+                }
+        ]
+}
+> db.createUser( {
+...     user: "siteRootAdmin",
+...     pwd: "admn",
+...     roles: [ { role: "root", db: "admin" } ]
+...   });
+Successfully added user: {
+        "user" : "siteRootAdmin",
+        "roles" : [
+                {
+                        "role" : "root",
+                        "db" : "admin"
+                }
+        ]
+}
+>
+==============================================================================
